@@ -1,0 +1,95 @@
+.register {
+  display: flex;
+  justify-content: center;
+  /* Ensures it fills the full viewport */
+  padding: 100px;
+  overflow: auto;
+  /* Allows scrolling if content overflows */
+}
+
+.registertopbar {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  background-color: #58d68d;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.register-container {
+  padding: 3vh 2vw;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+  /* Prevents content from going outside */
+}
+
+.register-title {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.registerform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.register form {
+  width: 100%;
+  max-width: 400px;
+  /* Prevents it from being too wide */
+}
+
+.register-btn {
+  background-color: #4d433457 !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  padding: 12px 0 !important;
+  border-radius: 8px !important;
+  width: 100%;
+}
+
+.MuiPaper-root {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+  .MuiPaper-root {
+    max-width: 90%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .registertopbar {
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  button {
+    font-size: 14px;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+  }
+}
